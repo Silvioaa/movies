@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="peliculas.js"></script>
+        <link rel="stylesheet" href="peliculas.css">
+    </head>
+    <body id="body">
+        <h1>Movie Finder</h1>
+        <div id="error"><span></span></div>
+        <form id="form">
+            <label for="title"><input type="text" id="title" autofocus placeholder="Enter Title"></label>
+            <label for="year"><input type="number" id="year" placeholder="Year"></label>
+            <label for="type">
+                <select name="type" id="type">
+                    <option value="">All Types</option>
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                    <option value="game">Game</option>
+                </select>
+            </label>
+            <input type="reset" id="reset" value="Reset">
+            <input type="submit" id="search" value="Search">
+        </form>
+        <div id="paging1"></div>
+        <div id="results" style="visibility: visible;">
+            <div id="loading" style="visibility: hidden"><span>Loading...</span></div>
+            <div id="detail" style="visibility: hidden"></div>
+            <div id="resultsLayer" style="visibility: visible"></div>
+        </div>
+        <div id="paging2"></div>
+    </body>
+</html>
