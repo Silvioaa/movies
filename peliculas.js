@@ -371,7 +371,7 @@ class UiController {
         this.instResults = new Results(this.createElement.bind(this));
         this.instDetail = new Detail(this.linkBack.bind(this),this.isFromSearch.bind(this));  
         
-        if(this.queryString.includes("tt")){
+        if(this.queryString.includes("id=tt")){
             this.currentPageType = this.DETAILTYPE;
             this.createElementFromURL(this.queryString);
         }else if(this.queryString.includes("s=")){
