@@ -1,6 +1,6 @@
 class Omdb {
     constructor(){
-        this.commonUrl = "http://www.omdbapi.com/?apikey="
+        this.commonUrl = "https://www.omdbapi.com/?apikey="
         this.apiKey = "6b9eb479";    
     }
 
