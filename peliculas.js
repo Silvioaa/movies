@@ -8,9 +8,9 @@ class Omdb {
         let titleWithSpace = title.replaceAll(" ", "+");   
         let url = `${this.commonUrl}${this.apiKey}&s=${titleWithSpace}`;
         if(year){
-            console.log("Entro al if");
             const d = new Date();
             if(Number.isInteger(year)&&year>0&&year<=d.getFullYear()){
+                console.log("Entro al if");
                 url+=`&y=${year}`;
             }
         }
