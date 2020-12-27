@@ -15,7 +15,7 @@ class Omdb {
             }
         }
         console.log(type);
-        if(type==="Series"||type==="Movie"||type==="Episode"||type==="Game"){
+        if(type==="series"||type==="movie"||type==="episode"||type==="game"){
             url+= `&type="${type}`;
         }
         if(Number.isInteger(page)&&page>0){
