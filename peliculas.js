@@ -9,7 +9,8 @@ class Omdb {
         let url = `${this.commonUrl}${this.apiKey}&s=${titleWithSpace}`;
         if(year){
             const d = new Date();
-            if(Number.isInteger(year)&&year>0&&year<=d.getFullYear()){
+            const yearNumber = Number(year);
+            if(Number.isInteger(yearNumber)&&yearNumber>0&&year<=d.getFullYear()){
                 console.log("Entro al if");
                 url+=`&y=${year}`;
             }
