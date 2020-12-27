@@ -11,11 +11,11 @@ class Omdb {
             const d = new Date();
             const yearNumber = Number(year);
             if(Number.isInteger(yearNumber)&&yearNumber>0&&year<=d.getFullYear()){
-                console.log("Entro al if");
                 url+=`&y=${year}`;
             }
         }
         if(type==="Series"||type==="Movie"||type==="Episode"||type==="Game"){
+            console.log("Entro al if del type");
             url+= `&type="${type}`;
         }
         if(Number.isInteger(page)&&page>0){
