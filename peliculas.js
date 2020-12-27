@@ -10,6 +10,7 @@ class Omdb {
         if(year){
             const d = new Date();
             if(Number.isInteger(year)&&year>0&&year<=d.getFullYear()){
+                console.log("Entro al if");
                 url+=`&y=${year}`;
             }
         }
