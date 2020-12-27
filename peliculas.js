@@ -14,8 +14,8 @@ class Omdb {
                 url+=`&y=${year}`;
             }
         }
+        console.log(type);
         if(type==="Series"||type==="Movie"||type==="Episode"||type==="Game"){
-            console.log("Entro al if del type");
             url+= `&type="${type}`;
         }
         if(Number.isInteger(page)&&page>0){
