@@ -286,7 +286,7 @@ form {
     border-radius: 20px;
     padding: 10px;
     cursor: pointer;
-    width: fit-content;
+    align-self: flex-start;
     margin-bottom: 20px;
 }
 
