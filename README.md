@@ -1,3 +1,5 @@
+# Movie Search Application
+
 This is a simple web application I created to help myself learn Javascript and Object Oriented Programming (OOP).
 
 The application is published in this url: [https://silvioaa.github.io/movies](https://silvioaa.github.io/movies).
@@ -8,11 +10,17 @@ The application consumes the [Open Movie Database (OMDB) API](http://www.omdbapi
 * Show detailed information about any search result.
 * Share a search or detail page's URL by handling the browser's history.
 
+## Vanilla Javascript
+
 For this webapp I chose not to use third-party libraries such as JQuery or Bootstrap, or frameworks like Angular or React. I think that helped me to consolidate my knowledge on web programming fundamentals, and I also believe it will help me to better understand the value those libraries and frameworks provide. I will learn about those other third-party tools in future projects.
+
+## The App
 
 The webapp has two screens, the search screen and the detail screen. These views are created once, and then hidden and shown as the user navigates through them. This also happens when the user uses the browser's back and forward buttons, saving time and bandwidth. 
 
 For example, on the detail screen, the user can go back to the search screen either by the webapp's back button, or the browser's back button. Either way, the detail page is hidden and the search results are shown again. When the user wants to see another search result detail, the detail page is populated with that item's information, and shown again.
+
+## MVC Pattern
 
 The app is organized along the lines of the MVC pattern:
 * The model has a single class, `OMDB`. It satisfies the information requests from the rest of the app. The fact that this repository class does this by querying the OMDB API is an implementation detail the rest of the app is not aware of. 
