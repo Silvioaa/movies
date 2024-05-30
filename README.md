@@ -1,5 +1,7 @@
 This is a simple web application I created to help myself learn Javascript and Object Oriented Programming (OOP).
 
+The application is published in this url: [https://silvioaa.github.io/movies](https://silvioaa.github.io/movies).
+
 The application consumes the [Open Movie Database (OMDB) API](http://www.omdbapi.com/) and it can be used to:
 
 * Search for movies, series, episodes and/or games by typing one or more keywords in a search bar.
